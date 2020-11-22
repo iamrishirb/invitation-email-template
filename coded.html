@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#460011">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#460011">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#460011">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#460011">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="BIET Jhansi Invitation to HR Email"/>
+    <meta name="author" content="Rishi Bajpai"/>
+
+    <!-- Google Font Files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>TPC BIET - HR Invitation Email</title>
+    <style type="text/css">
+    body{
+        background: #fff;
+        font-family: Poppins;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Poppins', sans-serif;
+    }
+    h1, h2{
+        text-align: center;
+    }
+    .email-wrapper{
+        width: 100%;
+        margin: 100px auto;
+        max-width: 600px;
+        background: #fff;
+        border-radius: 20px;
+    }
+    .email-head{
+        background: linear-gradient(to bottom, rgba(3, 31, 43, 0.8), rgba(0, 0, 0, 0)),url('images/admin.jpg');
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+        height: 300px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 20px rgba(34, 34, 34, 0.801);
+        transform: scale(1.05);
+    }
+    .email-head h1{
+        padding-top: 50px;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-size: 1.8rem;
+    }
+    .email-head h2{
+        margin-top: -20px;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 1.5rem;
+    }
+    .email-head h2:after{
+        content: "";
+        display: block;
+        height: 7px;
+        width: 30%;
+        margin: 0px auto;
+        background: #ffae00;
+    }
+    .email-head img{
+        display: block;
+        width: 60px;
+        margin: 130px auto;
+        border-radius: 50%;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0px 0px 15px rgba(77, 77, 77, 0.53);
+    }
+    .email-body{
+        padding: 5%;
+        font-family: 'Nunito', sans-serif;
+    }
+    .message-section{
+        padding: 2%;
+    }
+    .subject{
+        margin-top: 30px;
+        font-weight: 700;
+        letter-spacing: 0.03rem;
+        font-size: 1.4rem;
+    }
+    .recipient{
+        padding: 0px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .companyname{
+        padding: 0px;
+        margin: 0px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .message{
+        font-size: 01rem;
+        color: #000;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .sender{
+        text-align: right;
+    }
+    .sender li{
+        font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+        font-size: 0.9rem;
+    }
+    .post{
+        font-weight: 700;
+    }
+    .features{
+        margin: 50px 0px;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow:  15px 15px 60px #e8e8e8,
+                    -15px -15px 61px #ffffff;
+        padding: 30px 20px;
+    }
+    .section-head{
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .section-head:after{
+        content: "";
+        display: block;
+        height: 5px;
+        width: 50%;
+        margin: 5px auto;
+        background: #ffae00;
+        border-bottom: 3px dashed #000;
+    }
+    .feature{
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+        margin: 20px;
+    }
+    .material-icons{
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        text-align: center;
+        padding: 15px;
+        background: linear-gradient(145deg, #555555, #181818);
+        border-radius: 50%;
+    }
+    .icon-left{
+        color: #fff;
+    }
+    .icon-right{
+        color: #007aff;
+    }
+    .feature-text{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin: 0px 10px;
+        padding: auto 0px;
+        color: #007aff;
+    }
+    .feature:nth-child(odd) .feature-text{
+        color: #000;
+    }
+    .partners img{
+        width: 90%;
+        margin: 0% 5%;
+    }
+    .cursive{
+        font-family: 'Cookie', cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5px 0px;
+    }
+
+    /* -------------- placement card design ----------------- */
+    .placement{
+        width: 100%;
+        height: 150px;
+        margin: 30px auto;
+        border-radius: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .figure{
+        width: 30%;
+        height: inherit;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: column;
+        text-align: center;
+    }
+    .figure h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+    }
+    .detail{
+        width: 70%;
+        height: inherit;
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: center; 
+        flex-direction: column;
+    }
+    .detail h3, .detail p{
+        margin: 5px 0px;
+    }
+    .detail h3{
+        font-size: 1.5rem;
+    }
+    .percent{
+        background: rgba(255, 68, 0, 0.2);
+        color: orangered;
+        height: 180px;
+    }
+    .record{
+        padding-left: 0px;
+    }
+    .record li{
+        font-size: 1.2rem;
+        list-style-type: none;
+        padding: 2px;
+    }
+    /* .percent .figure{
+        background: rgba(255, 208, 0, 0.45);
+    } */
+    .highest{
+        background: rgba(0, 185, 43, 0.2);
+        color: #28a745;
+    }
+    .average{
+        background: rgba(0, 122, 255, 0.2);
+        color: rgb(0, 122, 255);    
+    }
+    .lowest{
+        background: rgba(255, 7, 48, 0.2);
+        color: #ff0730;
+    }
+
+    .footer{
+        margin: 0px;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        text-align: center;
+        padding: 15px;
+        border-radius: 0px 0px 20px 20px;
+        background: linear-gradient(145deg, #272727, #0c0c0c);
+    }
+    .prefooter .cursive{
+        color: #fff;
+        margin: 10px auto;
+    }
+    .prefooter img{
+        width: 95%;
+    }
+
+    </style>
+
+    <!-- media queries -->
+    <style id="media-query" type="text/css">
+        @media (max-width: 520px) {
+            .email-head h1{
+                font-size: 1.3rem;
+                letter-spacing: 0.08rem;
+            }
+            .features{
+                padding: 30px 10px;
+            }
+            .material-icons {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+                text-align: center;
+                padding: 15px;
+                background: linear-gradient(145deg, #555555, #181818);
+                border-radius: 50%;
+            }
+            .cursive{
+                font-size: 1.3rem;
+            }
+            .feature-text{
+                font-size: 0.9rem;
+            }
+            .placement{
+                width: 100%;
+                height: 150px;
+                margin: 30px auto;
+                border-radius: 30px;
+            }
+            .figure{
+                width: 20%;
+            }
+            .detail{
+                width: 80%;
+            }
+            .percent{
+                height: 200px;
+            }
+            .figure h3{
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 0.05rem;
+                transform: rotateZ(270deg);
+            }
+            .detail h3{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            .record li{
+                font-size: 1rem;
+                list-style-type: none;
+                padding: 2px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="email-head">
+            <h1>Training & Placement Cell</h1>
+            <h2>BIET Jhansi</h2>
+            <img src="https://lh3.googleusercontent.com/-z8ucLQv4xJM/X7ikeV8eQ1I/AAAAAAAAn0Q/mTasagWDU3oOw2Id-Ese0VjyGXKRfgsWACNcBGAsYHQ/s16000/biet-jhansi-logo.png" alt="">
+        </div>
+
+        <!-- Email Body -->
+        <div class="email-body">
+            <div class="message-section">
+                <h2 class="subject">Invitation to conduct Campus / Virtual Placement Drive in BIET Jhansi</h2>
+                <h3 class="recipient">Dear HR,</h3>
+                <h3 class="companyname">Company Name,</h3>
+                <p class="message">
+                    Iste placeat error officia commodi temporibus cupiditate at eveniet, deleniti architecto, voluptate ducimus illo corporis debitis aspernatur nesciunt vero. Iure, repellendus. Officia saepe architecto atque ex omnis possimus, quasi labore?
+                    Placeat expedita quae aperiam. Dolores dolore quas nemo voluptas libero ipsum autem blanditiis quidem, praesentium deserunt veritatis culpa nam vero distinctio, dignissimos dolorem, aut molestiae consectetur quaerat quam harum tenetur!
+                </p>
+                <p class="message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eaque magni. Ullam animi molestiae dolor voluptate mollitia maiores nulla corrupti quam fugit minus odit laboriosam quis a, eum dolorem odio!
+                </p>
+                <p class="message">
+                    Placeat expedita quae aperiam. Dolores dolore quas nemo voluptas libero ipsum autem blanditiis quidem, praesentium deserunt veritatis culpa nam vero distinctio, dignissimos dolorem, aut molestiae consectetur quaerat quam harum tenetur!
+                </p>
+                <div class="sender">
+                    <li>Regards,</li>
+                    <li>Dr. N. S. Beniwal</li>
+                    <li class="post">Officer - In- Charge</li>
+                    <li>TnP Cell - BIET Jhansi</li>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features">
+                <h2 class="section-head">
+                    Here's what our Campus Offers?
+                </h2>
+                <div class="feature">
+                    <div class="icon-right">
+                        <span class="material-icons">
+                            fact_check
+                        </span>
+                    </div>
+                    <p class="feature-text">
+                        Infrastructure readiness to conduct Virtual Drives 
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon-left">
+                        <i class="material-icons">account_balance</i>
+                    </div>
+                    <p class="feature-text">
+                        Lush green campus with all the modern amenities
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon-right">
+                        <span class="material-icons">
+                            router
+                        </span>
+                    </div>
+                    <p class="feature-text">
+                        Fast Internet Connectivity across whole campus
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon-left">
+                        <span class="material-icons">
+                            theaters
+                        </span>
+                    </div>
+                    <p class="feature-text">
+                        Auditoriums and Seminar halls for Conferences
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon-right">
+                        <span class="material-icons">
+                            desktop_mac
+                        </span>
+                    </div>
+                    <p class="feature-text">
+                        Well equipped labs with all the latest softwares
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon-left">
+                        <span class="material-icons">
+                            deck
+                        </span>
+                    </div>
+                    <p class="feature-text">
+                        Cafetaria and dedicated space for Interviews
+                    </p>
+                </div>
+            </div>
+
+            <!-- Partners Section -->
+            <div class="partners">
+                <h2 class="section-head">Our Corporate Tie-Ups</h2>
+                <p class="cursive">Here are some of our collaborations with country's prestigiuos industries.</p>
+                <img src="https://lh3.googleusercontent.com/-GecWCSLD_Js/X7ikec-CaVI/AAAAAAAAn0U/hFrKKpYW5Qo_ROZirxd0VcmLNa5c7U-4ACNcBGAsYHQ/s16000/partners.png" alt="">
+                <p class="cursive">. . . and many more</p><br>
+            </div>
+
+            <!-- Placements Section -->
+            <!-- <div class="placements">
+                <h2 class="section-head">Our Placement Stats</h2>
+                <div class="placement percent">
+                    <div class="figure">
+                        <h3 class="yellow">100%</h3>
+                    </div>
+                    <div class="detail">
+                        <h3 class="fact-head yellow">Percentage Placement</h3>
+                        <ul class="record">
+                            Total <b>XXX</b> Students Placed
+                            <li>Company : <b>Company Name</b></li>
+                            <li>Students Placed : <b>XX</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="placement highest">
+                    <div class="figure">
+                        <h3 class="green">12LPA</h3>
+                    </div>
+                    <div class="detail">
+                        <h3 class="fact-head green">Highest CTC Offered</h3>
+                        <ul class="record">
+                            <li>Company : <b>Company Name</b></li>
+                            <li>Students Placed : <b>XX</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="placement average">
+                    <div class="figure">
+                        <h3 class="blue">4.5LPA</h3>
+                    </div>
+                    <div class="detail">
+                        <h3 class="fact-head blue">Average CTC Offered</h3>
+                        <ul class="record">
+                            <li>Company : <b>Company Name</b></li>
+                            <li>Students Placed : <b>XX</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="placement lowest">
+                    <div class="figure">
+                        <h3 class="red">3.8LPA</h3>
+                    </div>
+                    <div class="detail">
+                        <h3 class="fact-head red">Lowest CTC Offered</h3>
+                        <ul class="record">
+                            <li>Company : <b>Company Name</b></li>
+                            <li>Students Placed : <b>XX</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="cursive">
+            This mail is delivered to you by
+        </div>
+        <div class="footer">
+            <div class="prefooter">
+               <img src="https://lh3.googleusercontent.com/-bHFjDKU3Z0Y/X7ikeVxAGHI/AAAAAAAAn0Y/Vl3yoID53_Q2rpNVmLgK4g70SrDyL0-cACNcBGAsYHQ/s16000/bietlogo.png" alt="">
+            </div>
+            <div class="social">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
